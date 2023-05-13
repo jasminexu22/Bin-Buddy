@@ -99,18 +99,13 @@ align-items: center;
 transition: 0.5s;
 }
 
-header .logo
-{
-  color: rgb(88, 130, 126);
-  font-weight: 700;
-  font-size: 2em;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-}
-
-header .logo span
-{
-  color: #9184ac;
+img {
+  width: 90px; 
+  height: auto; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  margin: 10px; 
 }
 
 header .navigation
