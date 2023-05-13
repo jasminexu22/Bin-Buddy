@@ -170,6 +170,11 @@ header .navigation li a:hover
   width:100%;
   align-items: right;
   margin-left: 15rem;
+  position: relative;
+  top: 6rem;
+  padding-left: 25rem;
+  
+  /* padding-top: 20rem; */
 }
 h1{
   font-size: 36px;
@@ -189,8 +194,8 @@ p{
 }
 
 .row{
-  margin-top: 1%;
-  width: 70%;
+  margin-top: 10%;
+  width: 80%;
   margin-left: 15rem;
   display: flex;
   justify-content: space-between;
@@ -204,4 +209,6 @@ p{
   margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
+  margin: 2rem;
+  width: 25rem;
 }
