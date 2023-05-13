@@ -149,15 +149,33 @@ header .navigation li a:hover
 /* about page */
 .about
 {
-  width: 100%;
+  /* width: 100%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 100px; */
+
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background: url(images/banner2.png);
+  background-size: cover;
+  
+  
 }
 
+.title{
+  width:100%;
+  align-items: right;
+  margin-left: 15rem;
+}
 h1{
   font-size: 36px;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #2A4E50;
 }
 
 
@@ -167,5 +185,23 @@ p{
   font-weight: 300;
   line-height: 22px;
   padding: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
+.row{
+  margin-top: 1%;
+  width: 70%;
+  margin-left: 15rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+}
+
+.boxes{
+  flex-basis: 31%;
+  background-color: #DECFC5;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
