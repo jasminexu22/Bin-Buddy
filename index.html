@@ -6,75 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Bin Buddy</title>
-
-
-  <!-- typewriter with java ( add seperate java file later ) -->
-
-  <script>
-    const typeWriter = function(txtElement, words, wait = 3000) {
-      this.txtElement = txtElement;
-      this.words = words;
-      this.txt = '';
-      this.wordIndex = 0;
-      this.wait = parseInt(wait, 10);
-      this.type();
-      this.isDeleting = false;
-    }
-  
-    // Type Method
-    typeWriter.prototype.type = function() {
-      // Current index of word
-      const current = this.wordIndex % this.words.length;
-      // Get full text of current word
-      const fullTxt = this.words[current];
-  
-      // Check if deleting
-      if(this.isDeleting) {
-        // Remove char
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-      } else {
-        // Add char
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-      }
-  
-      // Insert txt into element
-      this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-  
-      // Initial Type Speed
-      let typeSpeed = 200;
-  
-      if(this.isDeleting) {
-        typeSpeed /= 2;
-      }
-  
-      // If word is complete
-      if(!this.isDeleting && this.txt === fullTxt) {
-        // Make pause at end
-        typeSpeed = this.wait;
-        // Set delete to true
-        this.isDeleting = true;
-      } else if(this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        // Move to next word
-        this.wordIndex++;
-        // Pause before start typing
-        typeSpeed = 500;
-      }
-  
-      setTimeout(() => this.type(), typeSpeed)
-    }
-  
-    // Init on DOM Load
-    document.addEventListener('DOMContentLoaded', init);
-  
-    function init() {
-      const txtElement = document.querySelector('.typewriter');
-      const words = JSON.parse(txtElement.getAttribute('data-words'));
-      const wait = txtElement.getAttribute('data-wait');
-      // Init Typewriter
-      new typeWriter(txtElement, words, wait);
-    }
-  </script>
+  <script src = "script.js"></script>
 
 </head>
 
@@ -106,8 +38,8 @@
 
     <div class="row">
       <div class="boxes">
-        <h3>Text 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reiciendis beatae doloribus culpa cumque, aut praesentium qui quo, delectus earum sapiente, nisi optio aspernatur recusandae. Aut, natus consectetur eos odit corrupti accusamus optio maiores quas quo illum laborum nobis ea?</p>
+        <h3>Clean Community</h3>
+        <p>With Bin Buddy, you can ensure that your community is as litter-free as possible! </p>
       </div>
 
       <div class="boxes">
