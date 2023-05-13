@@ -31,3 +31,50 @@ body
   background: url(images/websiteheader.png);
   background-size: cover;
 }
+
+/* home banner text */
+.home .content h2.static-text
+{
+max-width: 500px;
+font-family: 'Poppins', sans-serif;
+text-align: left;
+margin-left: 300px;
+}
+
+
+.home .content h2
+{
+  font-size: 5em;
+  color: #2A4E50;
+}
+
+
+.home .content p
+{
+  font-size: 1em;
+  color: #fff;
+}
+
+/* #button## */
+
+.btn
+{
+  font-size: 1em;
+  color: #fff;
+  background: #decec5;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover
+{
+  letter-spacing:6px;
+}
+
+
