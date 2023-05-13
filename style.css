@@ -211,4 +211,14 @@ p{
   box-sizing: border-box;
   margin: 2rem;
   width: 25rem;
+  transition:
+}
+
+.boxes:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
